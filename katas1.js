@@ -86,8 +86,9 @@ function evenNumbersBackwards() {
 
     let listaParAoContrario = [];
   
-    for (let i = 20; i >=0; i-= 2) {
-  
+    for (let i = 20; i >=1; i--) {
+
+      if(i % 2 === 0)
       listaParAoContrario.push(i)
     }
       return listaParAoContrario;
@@ -100,8 +101,9 @@ function oddNumbersBackwards() {
 
   let listaImparAoContrario = [];
   
-  for (let i = 19; i >=0; i-= 2) {
+  for (let i = 20; i >=1; i--) {
 
+    if( i % 2 == 1)
     listaImparAoContrario.push(i)
   }
     return listaImparAoContrario;
