@@ -2,7 +2,7 @@ function oneThroughTwenty() {
     
   let listaNumerica = [];
   
-  for (let i = 0; i <= 20; i++) {
+  for (let i = 1; i <= 20; i++) {
 
     listaNumerica.push(i)
   }
@@ -16,9 +16,10 @@ function evensToTwenty() {
 
   let listaPar = [];
 
-  for (let i = 0; i <=20; i+= 2) {
+  for (let i = 1; i <=20; i++) {
 
-    listaPar.push(i)
+      if( i % 2 === 0)
+      listaPar.push(i)
   }
     return listaPar;
 }
@@ -30,8 +31,9 @@ function oddsToTwenty() {
 
   let listaImpar = [];
 
-  for (let i = 1; i <=20; i+= 2) {
-
+  for (let i = 1; i <=20; i++) {
+    
+    if( i % 2 === 1)
     listaImpar.push(i)
   }
     return listaImpar;
@@ -42,8 +44,9 @@ function multiplesOfFive() {
     
   let multiplosDeCinco =  [];
 
-  for (let i = 0; i<= 100; i+=5) {
-
+  for (let i = 5; i<= 100; i++) {
+    
+    if( i % 5 === 0)
     multiplosDeCinco.push(i)
   }
     return multiplosDeCinco;
@@ -69,7 +72,7 @@ function countingBackwards() {
     
   let listaNumerica = [];
   
-  for (let i = 20; i >=0; i--) {
+  for (let i = 20; i >=1; i--) {
 
     listaNumerica.push(i)
   }
@@ -109,8 +112,9 @@ function multiplesOfFiveBackwards() {
     
   let multiplosDeCincoAoContrario =  [];
 
-  for (let i = 100; i >=0; i-=5) {
-
+  for (let i = 100; i >=5; i--) {
+    
+    if( i % 5 === 0)
     multiplosDeCincoAoContrario.push(i)
   }
     return multiplosDeCincoAoContrario;
